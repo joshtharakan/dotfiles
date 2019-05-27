@@ -2,6 +2,7 @@
 # .bash_profile
 #
 # @author Jeff Geerling
+# @modified Joseph Tharakan
 # @see .inputrc
 #
 
@@ -88,7 +89,8 @@ export PATH="/usr/local/opt/php@7.2/sbin:$PATH"
 # fi
 
 # Python settings.
-export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
+ eval "$(pyenv init -)"
+# export PYTHONPATH="/usr/local/lib/python2.7/site-packages"
 
 # Super useful Docker container oneshots.
 # Usage: dockrun, or dockrun [centos7|fedora27|debian9|debian8|ubuntu1404|etc.]
